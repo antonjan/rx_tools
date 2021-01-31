@@ -108,7 +108,7 @@ struct tuning_state
 };
 
 /* 10000 is enough for 10GHz b/w worst case */
-#define MAX_TUNES	10000
+#define MAX_TUNES	100000
 struct tuning_state tunes[MAX_TUNES];
 int tune_count = 0;
 
@@ -132,7 +132,7 @@ void usage(void)
 		"\t[-a antenna (ex: 'Tuner 1 50 ohm')]\n"
 		//"\t[-s avg/iir smoothing (default: avg)]\n"
 		//"\t[-t threads (default: 1)]\n"
-		"\t[-d device key/value query (ex: 0, 1, driver=rtlsdr, driver=hackrf)]\n"
+		"\t[-d device key/value query (ex: 0, 1, driver=rtlsdr, driver=hackrf, driver=miri, driver=sdrplay)]\n"
 		"\t[-g tuner gain(s) (ex: 20, 40, LNA=40,VGA=20,AMP=0)]\n"
 		"\t[-p ppm_error (default: 0)]\n"
 		"\t[-S tuner_sleep_usec (default: 5000)]\n"
